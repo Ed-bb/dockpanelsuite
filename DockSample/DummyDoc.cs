@@ -1,7 +1,8 @@
 using System;
+using System.ComponentModel;
+using System.IO;
 using System.Windows.Forms;
 using WeifenLuo.WinFormsUI.Docking;
-using System.IO;
 
 namespace DockSample
 {
@@ -15,6 +16,7 @@ namespace DockSample
         }
 
         private string m_fileName = string.Empty;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public string FileName
         {
             get	{	return m_fileName;	}
