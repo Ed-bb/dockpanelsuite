@@ -1,8 +1,9 @@
 using System;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Security.Permissions;
+using System.ComponentModel;
 using System.Diagnostics.CodeAnalysis;
+using System.Drawing;
+using System.Security.Permissions;
+using System.Windows.Forms;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -73,6 +74,7 @@ namespace WeifenLuo.WinFormsUI.Docking
         }
 
         private bool m_allowEndUserDocking = true;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool AllowEndUserDocking
         {
             get	{	return m_allowEndUserDocking;	}
@@ -80,6 +82,7 @@ namespace WeifenLuo.WinFormsUI.Docking
         }
 
         private bool m_doubleClickTitleBarToDock = true;
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public bool DoubleClickTitleBarToDock
         {
             get { return m_doubleClickTitleBarToDock; }

@@ -19,6 +19,7 @@
 
         [LocalizedCategory("Category_Docking")]
         [LocalizedDescription("DockPanel_DockPanelTheme")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public ThemeBase Theme
         {
             get { return m_dockPanelTheme; }

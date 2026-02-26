@@ -104,6 +104,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             }
 
             private IDockContent m_activeContent = null;
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public IDockContent ActiveContent
             {
                 get { return m_activeContent; }
@@ -163,6 +164,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             }
 
             private bool m_flagDragging = false;
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             internal bool FlagDragging
             {
                 get { return m_flagDragging; }

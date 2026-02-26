@@ -1,8 +1,9 @@
-using System.Windows.Forms;
-using System.Drawing;
-using System.Drawing.Drawing2D;
+using System.ComponentModel;
 //using Vanara.PInvoke;
 using System.Diagnostics;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace WeifenLuo.WinFormsUI.Docking
 {
@@ -165,6 +166,7 @@ namespace WeifenLuo.WinFormsUI.Docking
                 }
 
                 private bool m_fullPanelEdge = false;
+                [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
                 public bool FullPanelEdge
                 {
                     get { return m_fullPanelEdge; }
@@ -189,6 +191,7 @@ namespace WeifenLuo.WinFormsUI.Docking
                 }
 
                 private DockPane m_dockPane = null;
+                [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
                 public DockPane DockPane
                 {
                     get { return m_dockPane; }
