@@ -42,6 +42,7 @@ namespace WeifenLuo.WinFormsUI.ThemeVS2005
             }
 
             private DockStyle m_status;
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public DockStyle Status
             {
                 get { return m_status; }

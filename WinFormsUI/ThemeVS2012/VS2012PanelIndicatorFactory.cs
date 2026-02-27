@@ -52,7 +52,7 @@ namespace WeifenLuo.WinFormsUI.ThemeVS2012
             }
 
             private DockStyle m_status;
-
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public DockStyle Status
             {
                 get { return m_status; }

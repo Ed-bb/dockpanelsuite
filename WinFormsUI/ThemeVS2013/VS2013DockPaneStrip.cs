@@ -196,6 +196,7 @@ namespace WeifenLuo.WinFormsUI.ThemeVS2013
             get { return m_selectMenu; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int SelectMenuMargin
         {
             get { return _selectMenuMargin; }
