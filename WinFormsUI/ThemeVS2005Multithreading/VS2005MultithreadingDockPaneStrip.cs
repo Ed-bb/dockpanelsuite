@@ -64,6 +64,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             }
 
             private int m_imageCategory = 0;
+            [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
             public int ImageCategory
             {
                 get { return m_imageCategory; }
@@ -214,6 +215,7 @@ namespace WeifenLuo.WinFormsUI.Docking
             get { return m_selectMenu; }
         }
 
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Visible)]
         public int SelectMenuMargin
         {
             get { return _selectMenuMargin; }
